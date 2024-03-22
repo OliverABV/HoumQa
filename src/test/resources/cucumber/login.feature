@@ -13,12 +13,12 @@ Feature: Pagina de inicio de sesion http://localhost:5173/
       |Constantinopla   |Oliver Houm   |New member  |
     And ingreso fecha actual "22-03-2024T10:00"
     Then presiono boton crear
-    And valido cracion de la visita "Constantinopla2"
+    And valido cracion de la visita "Constantinopla"
     
 # si no se la pasa por este medio el visitante este tomara el primero
 	
   @Houm2
-  Scenario: editar visitas con validación de campo.
+  Scenario: editar visitas con validacion de campo.
     When edito el visitante con nombre de ""
     And limpio campos y valido
     And modifico address por "Oliver"
