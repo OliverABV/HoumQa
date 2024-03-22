@@ -1,0 +1,690 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 262000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valido title de la pagina",
+            "match": {
+              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-03-22T04:55:09.415Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2464000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "crear visitas con validacion de campo",
+        "description": "",
+        "id": "pagina-de-inicio-de-sesion-http://localhost:5173/;crear-visitas-con-validacion-de-campo",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 579000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.cleanDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "presiono crear visita y crear",
+            "match": {
+              "location": "houm.testing.Page.HomePage.presiono_crear_visita_y_crear()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se muesta mensaje de validacion \"String must contain at least 1 character(s)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"String must contain at least 1 character(s)\"",
+                  "offset": 32
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.se_muesta_mensaje_de_validacion(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "completo formulario creacion de visita con",
+            "match": {
+              "location": "houm.testing.Page.HomePage.completo_formulario_creacion_de_visita_con(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Address",
+                  "Visitor name",
+                  "Houmer name"
+                ]
+              },
+              {
+                "cells": [
+                  "Constantinopla",
+                  "Oliver Houm",
+                  "New member"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "ingreso fecha actual \"22-03-2024T10:00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"22-03-2024T10:00\"",
+                  "offset": 21
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.ingreso_fecha_actual(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "presiono boton crear",
+            "match": {
+              "location": "houm.testing.Page.HomePage.presiono_boton_crear()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "valido cracion de la visita \"Constantinopla2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Constantinopla2\"",
+                  "offset": 28
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.valido_cracion_de_la_visita(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Houm"
+          },
+          {
+            "name": "@Houm1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valido title de la pagina",
+            "match": {
+              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-03-22T04:55:13.543Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1431000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "editar visitas con validaci�n de campo.",
+        "description": "",
+        "id": "pagina-de-inicio-de-sesion-http://localhost:5173/;editar-visitas-con-validaci�n-de-campo.",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 577000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.cleanDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "edito el visitante con nombre de \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "limpio campos y valido",
+            "match": {
+              "location": "houm.testing.Page.HomePage.limpio_campos_y_valido()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "modifico address por \"Oliver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Oliver\"",
+                  "offset": 21
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.modifico_address_por(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "valido modificacion \"Oliver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Oliver\"",
+                  "offset": 20
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.valido_modificacion(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Houm"
+          },
+          {
+            "name": "@Houm2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valido title de la pagina",
+            "match": {
+              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-03-22T04:55:16.398Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1451000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "cambiar el estado de la visita",
+        "description": "",
+        "id": "pagina-de-inicio-de-sesion-http://localhost:5173/;cambiar-el-estado-de-la-visita",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 593000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.cleanDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "edito el visitante con nombre de \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 192000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "modifico estado por \"DelaYed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DelaYed\"",
+                  "offset": 20
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.modifico_estado_por(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Houm"
+          },
+          {
+            "name": "@Houm3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valido title de la pagina",
+            "match": {
+              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-03-22T04:55:18.977Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1498000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "cambiar el estado de la visita",
+        "description": "",
+        "id": "pagina-de-inicio-de-sesion-http://localhost:5173/;cambiar-el-estado-de-la-visita",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 581000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.cleanDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "edito el visitante con nombre de \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "modifico estado por \"Completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Completed\"",
+                  "offset": 20
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.modifico_estado_por(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "ingreso comentario \"Cumple con los requisitos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cumple con los requisitos\"",
+                  "offset": 19
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.ingreso_comentario(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Houm"
+          },
+          {
+            "name": "@Houm4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valido title de la pagina",
+            "match": {
+              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-03-22T04:55:21.593Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1523000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "cambiar el estado de la visita",
+        "description": "",
+        "id": "pagina-de-inicio-de-sesion-http://localhost:5173/;cambiar-el-estado-de-la-visita",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 600000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "houm.testing.Page.Hooks.cleanDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "edito el visitante con nombre de \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "modifico estado por \"Completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Completed\"",
+                  "offset": 20
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.modifico_estado_por(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "ingreso comentario \"No Cumple requisitos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No Cumple requisitos\"",
+                  "offset": 19
+                }
+              ],
+              "location": "houm.testing.Page.HomePage.ingreso_comentario(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Houm"
+          },
+          {
+            "name": "@Houm5"
+          }
+        ]
+      }
+    ],
+    "name": "Pagina de inicio de sesion http://localhost:5173/",
+    "description": "",
+    "id": "pagina-de-inicio-de-sesion-http://localhost:5173/",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/cucumber/login.feature",
+    "tags": [
+      {
+        "name": "@Houm",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
