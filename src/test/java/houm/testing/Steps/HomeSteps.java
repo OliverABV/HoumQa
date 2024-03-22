@@ -1,165 +1,103 @@
 package houm.testing.Steps;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import static org.junit.Assert.assertTrue;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-
-import houm.testing.Context.Context;
-import houm.testing.Context.ScenarioContext;
-import houm.testing.Page.Base;
+import houm.testing.Page.HomePage;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-public class HomeSteps extends Base {
+public class HomeSteps {
 
-	private ScenarioContext scenarioContext;
+	HomePage homePage = new HomePage();
 
-	public HomeSteps() {
-		super(driver);
+	@Given("valido title de la pagina")
+	public void valido_title_de_la_pagina() {
+		homePage.IsVisibleTitle();
 	}
 
-	@FindBy(xpath = "//h1[@class='text-xl font-semibold leading-6']")
-	public WebElement title;
-	@FindBy(xpath = "//button[text()='Create visit']")
-	public WebElement btnCreateVisit;
-	@FindBy(xpath = "//button[text()='Create']")
-	public WebElement btnCreate;
-
-	// form
-	@FindBy(xpath = "//input[@name='address']")
-	public WebElement inputAddress;
-	@FindBy(xpath = "//input[@name='visitor_name']")
-	public WebElement inputVisitorName;
-	@FindBy(xpath = "//input[@name='houmer_name']")
-	public WebElement inputHoumerName;
-	// form edit
-	@FindBy(xpath = "//h3[contains(text(), 'Edit visit')]")
-	public WebElement formEdit;
-	@FindBy(xpath = "//div[contains(@class, 'mt-6')]//button[text()='Edit']")
-	public WebElement btnEdit;
-	@FindBy(xpath = "//input[@name='resolution_comment']")
-	public WebElement inputComment;
-
-	public boolean IsVisibleTitle() {
-		waitUntilElementIsVisible(title);
-		return isVisible(title);
+	@When("presiono crear visita y crear")
+	public void presiono_crear_visita_y_crear() {
+		homePage.clickBtnCreateVisit();
+		homePage.clickBtnCreate();
 	}
 
-	public void clickBtnCreateVisit() {
-		waitUntilElementIsElementClickable(btnCreateVisit);
-		btnCreateVisit.click();
+	@Given("se muesta mensaje de validacion {string}")
+	public void se_muesta_mensaje_de_validacion(String name) {
+		assertTrue("El mensaje de campo necesario no es existe", homePage.IsVisibleSatisfactoryPurchase(name));
+
 	}
 
-	public void clickBtnCreate() {
-		waitUntilElementIsElementClickable(btnCreate);
-		btnCreate.click();
+	@And("completo formulario creacion de visita con")
+	public void completo_formulario_creacion_de_visita_con(DataTable dataTable) {
+		homePage.completeForm(dataTable);
+
 	}
 
-	public boolean IsVisibleSatisfactoryPurchase(String nombre) {
-		WebElement selector = getDriver()
-				.findElement(By.xpath("//p[contains(@class,'text-red-600') and contains(.,'" + nombre + "')]"));
-		waitUntilElementIsVisible(selector);
-		return isVisible(selector);
+	@And("ingreso fecha actual {string}")
+	public void ingreso_fecha_actual(String date) {
+		homePage.sendKeysDate(date);
 	}
 
-	public void completeForm(DataTable dataTable) {
-		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-		for (Map<String, String> row : data) {
-			String address = row.get("Address");
-			String visitorName = row.get("Visitor name");
-			String HoumerName = row.get("Houmer name");
-			inputAddress.sendKeys(address);
-			inputVisitorName.sendKeys(visitorName);
-			inputHoumerName.sendKeys(HoumerName);
+	@Then("presiono boton crear")
+	public void presiono_boton_crear() {
+		homePage.clickBtnCreate();
 
+	}
+
+	@Then("valido cracion de la visita {string}")
+	public void valido_cracion_de_la_visita(String name) {
+		assertTrue("El nuevo addres actualizado no existe ", homePage.IsVisibleNewAddress(name));
+	}
+
+	///
+
+	@When("edito el visitante con nombre de {string}")
+	public void edito_el_visitante_con_nombre_de(String string) {
+		if (string.isEmpty()) {
+			homePage.fistClickEdit();
+
+		} else {
+			homePage.clickEdit(string);
 		}
 	}
 
-	public void sendKeysDate(String date) {
-		String[] partes = date.split("T");
-		String fecha = partes[0];
-		String hora = partes[1];
-
-		WebElement inputDate = driver.findElement(By.name("scheduled_at"));
-		inputDate.sendKeys(fecha);
-		inputDate.sendKeys(Keys.TAB);
-		inputDate.sendKeys(hora);
+	@When("limpio campos y valido")
+	public void limpio_campos_y_valido() {
+		homePage.cleanCampAndValidateEditVisit();
 
 	}
 
-	public void clickEdit(String name) {
-		WebElement nameElement = getDriver().findElement(By.xpath("//h4[contains(text(), '" + name + "')]"));
-		WebElement groupElement = nameElement.findElement(By.xpath("./.."));
-
-		((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();",
-				groupElement.findElement(By.xpath(".//button[text()='Edit']")));
-		waitUntilElementIsVisible(formEdit);
-	}
-
-	public void fistClickEdit() {
-		WebElement nameElement = getDriver().findElement(By.xpath("//h4[contains(@class, 'text-xl mb-1')]"));
-		WebElement groupElement = nameElement.findElement(By.xpath("./.."));
-		((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();",
-				groupElement.findElement(By.xpath(".//button[text()='Edit']")));
-		waitUntilElementIsVisible(formEdit);
+	@When("modifico address por {string}")
+	public void modifico_address_por(String address) {
+		homePage.sendKeysAddress(address);
 
 	}
 
-	public void cleanCampAndValidateEditVisit() {
-		waitUntilElementIsVisible(inputAddress);
-		inputAddress.clear();
-		btnEdit.click();
+	@When("valido modificacion {string}")
+	public void valido_modificacion(String name) {
+		assertTrue("El nuevo addres actualizado no existe ", homePage.IsVisibleNewAddress(name));
 
 	}
 
-	public void sendKeysAddress(String address) {
-		waitUntilElementIsVisible(inputAddress);
-		inputAddress.sendKeys(address);
-		btnEdit.click();
+	@When("modifico estado por {string}")
+	public void modifico_estado_por(String state) {
+		String modifiedState = homePage.capitalizeFirstLetter(state);
+		if (state.equalsIgnoreCase("Completed") || state.equalsIgnoreCase("Canceled")) {
+			homePage.modificateStateAndComment(modifiedState);
 
-	}
+		} else {
+			homePage.modificateState(modifiedState);
 
-	public boolean IsVisibleNewAddress(String name) {
-		WebElement nameElement = getDriver()
-				.findElement(By.xpath("//h4[@class='text-xl mb-1' and text()='" + name + "']"));
-		((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);", nameElement);
-
-		waitUntilElementIsVisible(nameElement);
-		return isVisible(nameElement);
-	}
-
-	public void modificateState(String state) {
-		WebElement nameElement = getDriver()
-				.findElement(By.xpath("//select[@name='status']/option[text()='" + state + "']"));
-		waitUntilElementIsVisible(nameElement);
-		nameElement.click();
-		btnEdit.click();
-	}
-
-	public String capitalizeFirstLetter(String str) {
-		if (str == null || str.isEmpty()) {
-			return str;
 		}
-		return str.substring(0, 1).toUpperCase(Locale.getDefault()) + str.substring(1).toLowerCase(Locale.getDefault());
+
 	}
 
-	public void modificateStateAndComment(String state) {
-		WebElement nameElement = getDriver()
-				.findElement(By.xpath("//select[@name='status']/option[text()='" + state + "']"));
-		waitUntilElementIsVisible(nameElement);
-		nameElement.click();
-	}
-
-	public void sendKeysComment(String comment) {
-		inputComment.sendKeys(comment);
+	@Then("ingreso comentario {string}")
+	public void ingreso_comentario(String comment) {
+		homePage.sendKeysComment(comment);
 
 	}
 

@@ -1,5 +1,6 @@
-package houm.testing.Page;
+package houm.testing.Steps;
 
+import houm.testing.Page.Base;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 

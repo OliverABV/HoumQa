@@ -10,7 +10,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(glue = { "houm.testing.Page" }, 
+@CucumberOptions(glue = { "houm.testing.Steps" },
 				features = "src/test/resources/cucumber", 
 				plugin = {"json:target/cucumber.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				monochrome = true,

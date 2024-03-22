@@ -11,28 +11,28 @@
         "steps": [
           {
             "result": {
-              "duration": 262000000,
+              "duration": 199000000,
               "status": "passed"
             },
             "line": 5,
             "name": "valido title de la pagina",
             "match": {
-              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+              "location": "houm.testing.Steps.HomeSteps.valido_title_de_la_pagina()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2024-03-22T04:55:09.415Z",
+        "start_timestamp": "2024-03-22T08:20:04.254Z",
         "before": [
           {
             "result": {
-              "duration": 2464000000,
+              "duration": 2835000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.setup()"
+              "location": "houm.testing.Steps.Hooks.setup()"
             }
           }
         ],
@@ -43,20 +43,19 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+              "location": "houm.testing.Steps.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
-              "duration": 579000000,
+              "duration": 762000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.cleanDriver()"
+              "location": "houm.testing.Steps.Hooks.cleanDriver()"
             }
           }
         ],
@@ -65,19 +64,19 @@
         "steps": [
           {
             "result": {
-              "duration": 173000000,
+              "duration": 1169000000,
               "status": "passed"
             },
             "line": 9,
             "name": "presiono crear visita y crear",
             "match": {
-              "location": "houm.testing.Page.HomePage.presiono_crear_visita_y_crear()"
+              "location": "houm.testing.Steps.HomeSteps.presiono_crear_visita_y_crear()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 137000000,
+              "duration": 130000000,
               "status": "passed"
             },
             "line": 10,
@@ -89,19 +88,19 @@
                   "offset": 32
                 }
               ],
-              "location": "houm.testing.Page.HomePage.se_muesta_mensaje_de_validacion(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.se_muesta_mensaje_de_validacion(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 152000000,
+              "duration": 158000000,
               "status": "passed"
             },
             "line": 11,
             "name": "completo formulario creacion de visita con",
             "match": {
-              "location": "houm.testing.Page.HomePage.completo_formulario_creacion_de_visita_con(io.cucumber.datatable.DataTable)"
+              "location": "houm.testing.Steps.HomeSteps.completo_formulario_creacion_de_visita_con(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
@@ -123,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 87000000,
+              "duration": 93000000,
               "status": "passed"
             },
             "line": 14,
@@ -135,25 +134,25 @@
                   "offset": 21
                 }
               ],
-              "location": "houm.testing.Page.HomePage.ingreso_fecha_actual(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.ingreso_fecha_actual(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 58000000,
               "status": "passed"
             },
             "line": 15,
             "name": "presiono boton crear",
             "match": {
-              "location": "houm.testing.Page.HomePage.presiono_boton_crear()"
+              "location": "houm.testing.Steps.HomeSteps.presiono_boton_crear()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 151000000,
+              "duration": 138000000,
               "status": "passed"
             },
             "line": 16,
@@ -165,7 +164,7 @@
                   "offset": 28
                 }
               ],
-              "location": "houm.testing.Page.HomePage.valido_cracion_de_la_visita(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.valido_cracion_de_la_visita(java.lang.String)"
             },
             "keyword": "And "
           }
@@ -194,22 +193,22 @@
             "line": 5,
             "name": "valido title de la pagina",
             "match": {
-              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+              "location": "houm.testing.Steps.HomeSteps.valido_title_de_la_pagina()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2024-03-22T04:55:13.543Z",
+        "start_timestamp": "2024-03-22T08:20:09.844Z",
         "before": [
           {
             "result": {
-              "duration": 1431000000,
+              "duration": 1493000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.setup()"
+              "location": "houm.testing.Steps.Hooks.setup()"
             }
           }
         ],
@@ -223,16 +222,16 @@
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+              "location": "houm.testing.Steps.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
-              "duration": 577000000,
+              "duration": 584000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.cleanDriver()"
+              "location": "houm.testing.Steps.Hooks.cleanDriver()"
             }
           }
         ],
@@ -241,7 +240,7 @@
         "steps": [
           {
             "result": {
-              "duration": 181000000,
+              "duration": 172000000,
               "status": "passed"
             },
             "line": 22,
@@ -253,25 +252,25 @@
                   "offset": 33
                 }
               ],
-              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.edito_el_visitante_con_nombre_de(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 194000000,
+              "duration": 177000000,
               "status": "passed"
             },
             "line": 23,
             "name": "limpio campos y valido",
             "match": {
-              "location": "houm.testing.Page.HomePage.limpio_campos_y_valido()"
+              "location": "houm.testing.Steps.HomeSteps.limpio_campos_y_valido()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 180000000,
+              "duration": 192000000,
               "status": "passed"
             },
             "line": 24,
@@ -283,13 +282,13 @@
                   "offset": 21
                 }
               ],
-              "location": "houm.testing.Page.HomePage.modifico_address_por(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.modifico_address_por(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 143000000,
+              "duration": 141000000,
               "status": "passed"
             },
             "line": 25,
@@ -301,7 +300,7 @@
                   "offset": 20
                 }
               ],
-              "location": "houm.testing.Page.HomePage.valido_modificacion(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.valido_modificacion(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -324,28 +323,28 @@
         "steps": [
           {
             "result": {
-              "duration": 172000000,
+              "duration": 143000000,
               "status": "passed"
             },
             "line": 5,
             "name": "valido title de la pagina",
             "match": {
-              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+              "location": "houm.testing.Steps.HomeSteps.valido_title_de_la_pagina()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2024-03-22T04:55:16.398Z",
+        "start_timestamp": "2024-03-22T08:20:12.748Z",
         "before": [
           {
             "result": {
-              "duration": 1451000000,
+              "duration": 1456000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.setup()"
+              "location": "houm.testing.Steps.Hooks.setup()"
             }
           }
         ],
@@ -359,16 +358,16 @@
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+              "location": "houm.testing.Steps.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
-              "duration": 593000000,
+              "duration": 581000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.cleanDriver()"
+              "location": "houm.testing.Steps.Hooks.cleanDriver()"
             }
           }
         ],
@@ -377,7 +376,7 @@
         "steps": [
           {
             "result": {
-              "duration": 168000000,
+              "duration": 173000000,
               "status": "passed"
             },
             "line": 29,
@@ -389,13 +388,13 @@
                   "offset": 33
                 }
               ],
-              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.edito_el_visitante_con_nombre_de(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 192000000,
+              "duration": 182000000,
               "status": "passed"
             },
             "line": 30,
@@ -407,7 +406,7 @@
                   "offset": 20
                 }
               ],
-              "location": "houm.testing.Page.HomePage.modifico_estado_por(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.modifico_estado_por(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -430,28 +429,28 @@
         "steps": [
           {
             "result": {
-              "duration": 137000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 5,
             "name": "valido title de la pagina",
             "match": {
-              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+              "location": "houm.testing.Steps.HomeSteps.valido_title_de_la_pagina()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2024-03-22T04:55:18.977Z",
+        "start_timestamp": "2024-03-22T08:20:15.285Z",
         "before": [
           {
             "result": {
-              "duration": 1498000000,
+              "duration": 1540000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.setup()"
+              "location": "houm.testing.Steps.Hooks.setup()"
             }
           }
         ],
@@ -465,16 +464,16 @@
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+              "location": "houm.testing.Steps.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
-              "duration": 581000000,
+              "duration": 579000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.cleanDriver()"
+              "location": "houm.testing.Steps.Hooks.cleanDriver()"
             }
           }
         ],
@@ -483,7 +482,7 @@
         "steps": [
           {
             "result": {
-              "duration": 168000000,
+              "duration": 186000000,
               "status": "passed"
             },
             "line": 34,
@@ -495,13 +494,13 @@
                   "offset": 33
                 }
               ],
-              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.edito_el_visitante_con_nombre_de(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 150000000,
+              "duration": 140000000,
               "status": "passed"
             },
             "line": 35,
@@ -513,13 +512,13 @@
                   "offset": 20
                 }
               ],
-              "location": "houm.testing.Page.HomePage.modifico_estado_por(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.modifico_estado_por(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 76000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 36,
@@ -531,7 +530,7 @@
                   "offset": 19
                 }
               ],
-              "location": "houm.testing.Page.HomePage.ingreso_comentario(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.ingreso_comentario(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -554,20 +553,20 @@
         "steps": [
           {
             "result": {
-              "duration": 137000000,
+              "duration": 136000000,
               "status": "passed"
             },
             "line": 5,
             "name": "valido title de la pagina",
             "match": {
-              "location": "houm.testing.Page.HomePage.valido_title_de_la_pagina()"
+              "location": "houm.testing.Steps.HomeSteps.valido_title_de_la_pagina()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2024-03-22T04:55:21.593Z",
+        "start_timestamp": "2024-03-22T08:20:17.938Z",
         "before": [
           {
             "result": {
@@ -575,7 +574,7 @@
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.setup()"
+              "location": "houm.testing.Steps.Hooks.setup()"
             }
           }
         ],
@@ -586,20 +585,19 @@
         "after": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
+              "location": "houm.testing.Steps.Hooks.TakesScreenshotOnFail(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
-              "duration": 600000000,
+              "duration": 568000000,
               "status": "passed"
             },
             "match": {
-              "location": "houm.testing.Page.Hooks.cleanDriver()"
+              "location": "houm.testing.Steps.Hooks.cleanDriver()"
             }
           }
         ],
@@ -608,7 +606,7 @@
         "steps": [
           {
             "result": {
-              "duration": 183000000,
+              "duration": 179000000,
               "status": "passed"
             },
             "line": 40,
@@ -620,13 +618,13 @@
                   "offset": 33
                 }
               ],
-              "location": "houm.testing.Page.HomePage.edito_el_visitante_con_nombre_de(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.edito_el_visitante_con_nombre_de(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 154000000,
+              "duration": 132000000,
               "status": "passed"
             },
             "line": 41,
@@ -638,13 +636,13 @@
                   "offset": 20
                 }
               ],
-              "location": "houm.testing.Page.HomePage.modifico_estado_por(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.modifico_estado_por(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 71000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "line": 42,
@@ -656,7 +654,7 @@
                   "offset": 19
                 }
               ],
-              "location": "houm.testing.Page.HomePage.ingreso_comentario(java.lang.String)"
+              "location": "houm.testing.Steps.HomeSteps.ingreso_comentario(java.lang.String)"
             },
             "keyword": "Then "
           }
