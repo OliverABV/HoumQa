@@ -1,5 +1,5 @@
-HOUM 
-PASO A PASO
+**HOUM PASO A PASO**
+
 
 Una vez modificado el código pertinente antes entregado, podemos montar la API y la web para comenzar con la automatización.
 
@@ -23,7 +23,7 @@ Las tecnologías utilizadas en este proyecto incluyen el lenguaje de programaci�
 
 Es importante destacar que el uso de Java como lenguaje de programación proporciona una base sólida y ampliamente utilizada en el desarrollo de software. **Para pruebas técnicas, resulta más robusto, ya que se dispone del conocimiento directo del usuario, lo cual no ocurriría con frameworks que abstraen algunas capas.**
 
-STEP STEP
+**STEP STEP**
 
 Se crea un archivo .feature (Cucumber), en el cual se plantea el escenario de la prueba, la cual contiene la capa de interpretación usuario de fácil lectura para personas de áreas de productos y otros. Aquí se dictan las acciones que ejecutará el código en lenguaje natural.
 ![image](https://github.com/OliverABV/HoumQa/assets/45653045/94587b92-b715-49f8-8113-87b2b4719bb1)
