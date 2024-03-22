@@ -48,6 +48,8 @@ Aquí pueden ver el orden de las carpetas.
 
 
 **INFORME**
+
+
 Como agregago de aver automatizado todos los casos se implemento un informe el cual estara en la carpeta target/report_html/index.html
 cual se vee de la siguente manera:
 ![image](https://github.com/OliverABV/HoumQa/assets/45653045/63b99e8b-62a1-41f0-b09c-6a8f3f37fe14)
