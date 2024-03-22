@@ -18,8 +18,6 @@ Solo necesitamos indicar el nombre de la clase y esta hará el resto del trabajo
 
 
 Las tecnologías utilizadas en este proyecto incluyen el lenguaje de programación Java, la arquitectura POM (Project Object Model) para mantener un orden en el código, y la sintaxis Gherkin para tener una visión clara del flujo desde la perspectiva del cliente. Además, se utiliza Selenium, una herramienta de código abierto que se utiliza para automatizar aplicaciones web.
-![Uploading image.png…]()
-
 
 Es importante destacar que el uso de Java como lenguaje de programación proporciona una base sólida y ampliamente utilizada en el desarrollo de software. **Para pruebas técnicas, resulta más robusto, ya que se dispone del conocimiento directo del usuario, lo cual no ocurriría con frameworks que abstraen algunas capas.**
 
